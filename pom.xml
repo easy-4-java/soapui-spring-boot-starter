@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.hiwepy</groupId>
+	<groupId>io.github.hiwepy</groupId>
 	<artifactId>soapui-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Soapui</description>
 	<version>3.3.x.20240823.RELEASE</version>
@@ -434,7 +434,7 @@
 				<version>${soapui.version}</version>
 			</dependency>
 			<dependency>
-			   <groupId>com.github.hiwepy</groupId>
+			   <groupId>io.github.hiwepy</groupId>
 				<artifactId>soapui-template</artifactId>
 				<version>${soapui-template.version}</version>
 			</dependency>
@@ -500,7 +500,7 @@
 			<artifactId>soapui</artifactId>
 		</dependency>
 		<dependency>
-		   <groupId>com.github.hiwepy</groupId>
+		   <groupId>io.github.hiwepy</groupId>
 			<artifactId>soapui-template</artifactId>
 			<exclusions>
 				<exclusion>
