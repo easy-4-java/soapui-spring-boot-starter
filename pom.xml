@@ -527,6 +527,22 @@
         <dependency>
            <groupId>com.github.hiwepy</groupId>
             <artifactId>soapui-template</artifactId>
+            <exclusions>
+                <!-- Its old com.eviware coordinate is unavailable; SoapUI 5.4.0
+                     is already a direct dependency under SmartBear's published GAV. -->
+                <exclusion>
+                    <groupId>com.eviware</groupId>
+                    <artifactId>soapui</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>not-yet-commons-ssl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.btr</groupId>
+                    <artifactId>proxy-vole</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
