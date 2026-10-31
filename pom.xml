@@ -66,7 +66,7 @@
         <junit.version>4.13.2</junit.version>
         <slf4j.version>2.0.18</slf4j.version>
         <soapui-template.version>3.0.x.20260630-SNAPSHOT</soapui-template.version>
-        <soapui.version>5.4.0</soapui.version>
+        <soapui.version>5.4.0-easy4j</soapui.version>
         <!-- Maven Plugin Dependencies -->
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
@@ -108,7 +108,7 @@
                 <artifactId>not-yet-commons-ssl</artifactId>
                 <version>${commons-ssl.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
+            <!-- The soapui-template 3.0.x line uses the published Easy4J SoapUI fork. -->
             <!-- https://github.com/SmartBear/soapui -->
             <dependency>
                 <groupId>com.eviware</groupId>
@@ -203,9 +203,19 @@
         </dependency>
 
         <!-- SoapUI dependencies -->
-        <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
-
-        <!-- Source: https://github.com/easy-4-java/soapui-template — easy4j soapui-template -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eviware</groupId>
+            <artifactId>soapui</artifactId>
+        </dependency>
+        <!-- Source: https://github.com/easy-4-java/soapui-template -->
+        <dependency>
+            <groupId>io.github.easy4j</groupId>
+            <artifactId>soapui-template</artifactId>
+        </dependency>
 
         <!-- NOT Yet Commons SSL -->
         <!-- For Not-Yet-Commons Ssl -->
