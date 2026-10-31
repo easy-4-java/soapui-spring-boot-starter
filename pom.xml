@@ -407,8 +407,8 @@
     <repositories>
 
         <repository>
-            <id>smartbear-sweden-plugin-repository</id>
-            <url>http://smartbearsoftware.com/repository/maven2/</url>
+            <id>smartbear-sweden-repository</id>
+            <url>https://rapi.tools.ops.smartbear.io/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -446,10 +446,11 @@
                 <scope>test</scope>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
+            <!-- SoapUI 5.4.0 is published by SmartBear under com.smartbear.soapui;
+                 its Java packages remain com.eviware.soapui. -->
             <!-- https://github.com/SmartBear/soapui -->
             <dependency>
-                <groupId>com.eviware</groupId>
+                <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui</artifactId>
                 <version>${soapui.version}</version>
             </dependency>
@@ -517,9 +518,9 @@
         </dependency>
 
         <!-- SoapUI dependencies -->
-        <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
+        <!-- https://github.com/SmartBear/soapui -->
         <dependency>
-            <groupId>com.eviware</groupId>
+            <groupId>com.smartbear.soapui</groupId>
             <artifactId>soapui</artifactId>
         </dependency>
         <!-- Source: https://github.com/easy-4-java/soapui-template — easy4j soapui-template -->
