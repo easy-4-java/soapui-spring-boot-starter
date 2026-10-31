@@ -108,10 +108,11 @@
                 <artifactId>not-yet-commons-ssl</artifactId>
                 <version>${commons-ssl.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
+            <!-- SoapUI 5.4.0 is published by SmartBear under com.smartbear.soapui;
+                 its Java packages remain com.eviware.soapui. -->
             <!-- https://github.com/SmartBear/soapui -->
             <dependency>
-                <groupId>com.eviware</groupId>
+                <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui</artifactId>
                 <version>${soapui.version}</version>
             </dependency>
@@ -208,7 +209,7 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.eviware</groupId>
+            <groupId>com.smartbear.soapui</groupId>
             <artifactId>soapui</artifactId>
         </dependency>
         <!-- Source: https://github.com/easy-4-java/soapui-template -->
@@ -227,6 +228,19 @@
         <!-- For JUnit -->
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>smartbear-sweden-repository</id>
+            <url>https://rapi.tools.ops.smartbear.io/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <!-- 制品发布仓库配置（distributionManagement） -->
     <distributionManagement>
