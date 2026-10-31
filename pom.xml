@@ -203,9 +203,19 @@
         </dependency>
 
         <!-- SoapUI dependencies -->
-        <!-- https://mvnrepository.com/artifact/com.eviware/soapui -->
-
-        <!-- Source: https://github.com/easy-4-java/soapui-template — easy4j soapui-template -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eviware</groupId>
+            <artifactId>soapui</artifactId>
+        </dependency>
+        <!-- Source: https://github.com/easy-4-java/soapui-template -->
+        <dependency>
+            <groupId>io.github.easy4j</groupId>
+            <artifactId>soapui-template</artifactId>
+        </dependency>
 
         <!-- NOT Yet Commons SSL -->
         <!-- For Not-Yet-Commons Ssl -->
